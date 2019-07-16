@@ -41,6 +41,7 @@ Use `kubectl get pods` to observe when all the ZK nodes are up and have STATUS `
 kubectl kudo install kafka --instance=kafka --parameter ZOOKEEPER_URI=zk-zookeeper-0.zk-hs:2181,zk-zookeeper-1.zk-hs:2181,zk-zookeeper-2.zk-hs:2181 --parameter ZOOKEEPER_PATH=/small -p BROKERS_COUNTER=3
 ```
 
+Show plan `kudo plan status --instance=kafka` (demonstrates app aware automation) 
 Use `kubectl get pods` to observe when all the Kafka brokers are up and have STATUS `RUNNING`.
 
 
